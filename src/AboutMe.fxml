@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="AboutMeController">
    <children>
-      <StackPane layoutX="114.0" layoutY="41.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="My name is Jaret Wright">
+            <Label fx:id="nameLabel" text="My name is Jaret Wright">
                <font>
                   <Font size="48.0" />
                </font>
             </Label>
+            <Button mnemonicParsing="false" onAction="#showNickName" prefWidth="150.0" text="Show Nick Name" />
+            <Button mnemonicParsing="false" onAction="#showProperName" prefWidth="150.0" text="Show Proper Name" />
          </children>
-      </StackPane>
+      </VBox>
    </children>
 </AnchorPane>
