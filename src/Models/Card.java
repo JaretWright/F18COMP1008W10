@@ -1,12 +1,8 @@
 package Models;
 
-
 import java.util.Arrays;
 import java.util.List;
 import javafx.scene.image.Image;
-
-
-
 
 /**
  *
@@ -37,8 +33,8 @@ public class Card {
     
     private void setImage()
     {
-        String imageName = String.format("./images/%s_of_%s.png",faceName,suit);
-        image = new Image(imageName);
+        String imageLocation = "./images/"+faceName+"_of_"+suit+".png";
+        image = new Image(imageLocation);
     }
 
     public Image getImage() {
